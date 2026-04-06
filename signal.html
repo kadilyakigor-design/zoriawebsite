@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Zoria Signal — Real-time market intelligence. Options flow, sentiment tracking, and smart price alerts." />
+  <meta name="theme-color" content="#0D1117" />
+  <title>Zoria Signal — Real-Time Market Intelligence</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="signal">
+
+  <canvas id="starfield"></canvas>
+
+  <!-- NAVIGATION -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Zoria Markets home">
+        <svg class="nav-star" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26" fill="none" stroke="#F0B429" stroke-width="1.8" stroke-linejoin="round"/>
+        </svg>
+        <span class="nav-brand"><span class="nav-z">ZORIA</span><span class="nav-m">MARKETS</span></span>
+      </a>
+      <div class="nav-links" id="nav-links">
+        <a href="journal.html"    class="nav-link" data-nav="journal">Journal</a>
+        <a href="vision.html"     class="nav-link" data-nav="vision">Vision</a>
+        <a href="signal.html"     class="nav-link" data-nav="signal">Signal</a>
+        <a href="community.html"  class="nav-link" data-nav="community">Community</a>
+        <a href="index.html#waitlist" class="nav-cta">Join Waitlist</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="page-wrap">
+
+    <!-- ══ SIGNAL HERO ══ -->
+    <section class="signal-hero fade-up">
+      <div class="section-inner" style="text-align:center">
+        <span class="hero-icon" aria-hidden="true">⚡</span>
+        <div class="s-label" style="justify-content:center">Coming Q3 2026</div>
+        <h1 class="s-title" style="font-size:clamp(2.4rem,6vw,4rem)">Zoria Signal</h1>
+        <p class="s-sub" style="margin:0 auto">
+          Real-time market intelligence.<br>
+          Know what's moving <strong style="color:var(--gold)">before everyone else</strong>.
+        </p>
+      </div>
+    </section>
+
+    <!-- ══ TERMINAL MOCKUP ══ -->
+    <section class="terminal-section fade-up">
+      <div class="section-inner">
+
+        <div class="terminal-wrap">
+          <div class="terminal" aria-label="Zoria Signal terminal preview" role="img">
+
+            <!-- Header -->
+            <div class="term-header">
+              <span class="term-title">⚡ ZORIA SIGNAL</span>
+              <div style="display:flex;align-items:center;gap:16px">
+                <span class="term-live">
+                  <span class="term-live-dot" aria-hidden="true"></span>
+                  LIVE
+                </span>
+              </div>
+            </div>
+
+            <div class="term-updated">
+              Last updated: <span id="terminal-ts">just now</span>
+            </div>
+
+            <!-- Trending -->
+            <div class="term-section">
+              <div class="term-section-title">🔥 TRENDING NOW</div>
+
+              <div class="term-row">
+                <span class="term-ticker">$NVDA</span>
+                <span class="term-change up">▲ +4.2%</span>
+                <span class="term-sentiment bull">🟢 87% BULLISH</span>
+              </div>
+              <div class="term-row">
+                <span class="term-ticker">$BTC</span>
+                <span class="term-change up">▲ +2.8%</span>
+                <span class="term-sentiment bull">🟢 79% BULLISH</span>
+              </div>
+              <div class="term-row">
+                <span class="term-ticker">$TSLA</span>
+                <span class="term-change dn">▼ -1.4%</span>
+                <span class="term-sentiment bear">🔴 34% BULLISH</span>
+              </div>
+              <div class="term-row">
+                <span class="term-ticker">$META</span>
+                <span class="term-change up">▲ +1.9%</span>
+                <span class="term-sentiment bull">🟢 71% BULLISH</span>
+              </div>
+              <div class="term-row">
+                <span class="term-ticker">$AAPL</span>
+                <span class="term-change up">▲ +0.7%</span>
+                <span class="term-sentiment bull">🟢 65% BULLISH</span>
+              </div>
+            </div>
+
+            <!-- Options -->
+            <div class="term-section">
+              <div class="term-section-title">⚠️ UNUSUAL OPTIONS ACTIVITY</div>
+
+              <div class="term-options-row">
+                <div class="term-opt-name">$AAPL — Large call sweep detected</div>
+                <div class="term-opt-detail">Expiry: 30 days &nbsp;|&nbsp; Est. Size: $2.4M &nbsp;|&nbsp; <span style="color:var(--green)">BULLISH</span></div>
+              </div>
+              <div class="term-options-row">
+                <div class="term-opt-name">$MSFT — Put / Call ratio spike</div>
+                <div class="term-opt-detail">Expiry: 14 days &nbsp;|&nbsp; Est. Size: $1.1M &nbsp;|&nbsp; <span style="color:var(--red)">BEARISH</span></div>
+              </div>
+            </div>
+
+            <!-- Sentiment bars -->
+            <div class="term-section">
+              <div class="term-section-title">📊 MARKET SENTIMENT</div>
+
+              <div class="term-sentiment-row">
+                <span class="term-s-label">S&amp;P 500</span>
+                <div class="term-bar-wrap"><div class="term-bar-fill" style="width:67%"></div></div>
+                <span class="term-s-pct">67%</span>
+              </div>
+              <div class="term-sentiment-row">
+                <span class="term-s-label">Crypto</span>
+                <div class="term-bar-wrap"><div class="term-bar-fill" style="width:71%"></div></div>
+                <span class="term-s-pct">71%</span>
+              </div>
+              <div class="term-sentiment-row">
+                <span class="term-s-label">Tech</span>
+                <div class="term-bar-wrap"><div class="term-bar-fill" style="width:74%"></div></div>
+                <span class="term-s-pct">74%</span>
+              </div>
+            </div>
+
+          </div><!-- /terminal -->
+
+          <!-- Lock Overlay -->
+          <div class="terminal-overlay" aria-label="Early access required">
+            <div class="overlay-lock" aria-hidden="true">🔒</div>
+            <h2 class="overlay-title">Early Access Only</h2>
+            <p class="overlay-sub">Join the waitlist to unlock Zoria Signal</p>
+            <a href="index.html#waitlist" class="btn-gold" style="border-radius:50px;padding:12px 28px;font-size:.92rem">
+              Join Waitlist →
+            </a>
+          </div>
+
+        </div><!-- /terminal-wrap -->
+      </div>
+    </section>
+
+    <!-- ══ SIGNAL FEATURES ══ -->
+    <section class="signal-features">
+      <div class="section-inner">
+        <div class="s-label" style="justify-content:center">What You Get</div>
+        <h2 class="s-title fade-up" style="text-align:center">Your Edge, Amplified</h2>
+        <p class="s-sub fade-up" style="text-align:center;margin:0 auto 46px">
+          Three tools that give you the information advantage professional traders pay for.
+        </p>
+
+        <div class="signal-grid">
+
+          <div class="glass-card tilt-card fade-up" style="padding:38px 28px;--delay:.05s">
+            <div class="icon-box" aria-hidden="true">🎯</div>
+            <h3 class="card-title">Smart Price Alerts</h3>
+            <p class="card-text">
+              Set custom alerts for price moves, volume spikes and breakouts on any stock
+              or crypto in your watchlist. Never miss the move that matters.
+            </p>
+          </div>
+
+          <div class="glass-card tilt-card fade-up" style="padding:38px 28px;--delay:.12s">
+            <div class="icon-box" aria-hidden="true">📈</div>
+            <h3 class="card-title">Sentiment Tracker</h3>
+            <p class="card-text">
+              Real-time bullish/bearish sentiment aggregated from thousands of sources
+              across stocks and crypto markets — updated every few minutes.
+            </p>
+          </div>
+
+          <div class="glass-card tilt-card fade-up" style="padding:38px 28px;--delay:.19s">
+            <div class="icon-box" aria-hidden="true">🔍</div>
+            <h3 class="card-title">Options Flow Scanner</h3>
+            <p class="card-text">
+              Unusual options activity that historically precedes significant price moves —
+              spotted by Zoria AI before it hits mainstream financial media.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ SIGNAL WAITLIST ══ -->
+    <section class="signal-waitlist fade-up">
+      <div class="section-inner">
+        <div class="signal-waitlist-box glass-card gold-card" style="margin:0 auto">
+          <div class="s-label" style="justify-content:center">Be First</div>
+          <h2 class="s-title" style="text-align:center;font-size:clamp(1.6rem,3.5vw,2.3rem)">
+            Be First To Access<br>Zoria Signal
+          </h2>
+          <p class="s-sub" style="text-align:center;margin:0 auto 28px">
+            Launching Q3 2026. Early access for waitlist members only.
+          </p>
+
+          <form class="waitlist-form" novalidate>
+            <div class="email-row" style="margin:0 auto">
+              <div class="input-wrap">
+                <input type="email" class="email-input"
+                  placeholder="Your email address"
+                  autocomplete="email" required aria-label="Email address" />
+              </div>
+              <button type="submit" class="btn-gold" style="border-radius:var(--r-sm);padding:0 24px;height:52px;white-space:nowrap">
+                <span class="btn-text">Get Early Access →</span>
+              </button>
+            </div>
+            <div class="form-error" role="alert"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </div><!-- /page-wrap -->
+
+  <!-- TICKER -->
+  <div class="ticker-wrap" role="marquee" aria-label="Live market data">
+    <div class="ticker-inner" id="ticker-inner"></div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <svg class="footer-star" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26" fill="none" stroke="#F0B429" stroke-width="1.8" stroke-linejoin="round"/>
+        </svg>
+        <span class="footer-name"><span class="footer-z">ZORIA</span> <span class="footer-mk">MARKETS</span></span>
+      </div>
+      <p class="footer-tagline">Market Intelligence. Simplified.</p>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="journal.html">Journal</a>
+        <a href="vision.html">Vision</a>
+        <a href="signal.html">Signal</a>
+        <a href="community.html">Community</a>
+      </nav>
+      <a href="https://x.com/zoriamarkets" class="footer-social" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.835L1.254 2.25H8.08l4.253 5.622L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77z"/></svg>
+        @ZoriaMarkets on X
+      </a>
+      <div class="footer-divider" aria-hidden="true"></div>
+      <p class="footer-copy">© 2026 Zoria Markets. All rights reserved.</p>
+      <p class="footer-powered">Powered by Zoria AI</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

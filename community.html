@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Star Traders — The Zoria community platform where serious traders share strategies, compete on leaderboards and get AI feedback." />
+  <meta name="theme-color" content="#0D1117" />
+  <title>Star Traders Community — Zoria Markets</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="community">
+
+  <canvas id="starfield"></canvas>
+
+  <!-- NAVIGATION -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Zoria Markets home">
+        <svg class="nav-star" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26" fill="none" stroke="#F0B429" stroke-width="1.8" stroke-linejoin="round"/>
+        </svg>
+        <span class="nav-brand"><span class="nav-z">ZORIA</span><span class="nav-m">MARKETS</span></span>
+      </a>
+      <div class="nav-links" id="nav-links">
+        <a href="journal.html"    class="nav-link" data-nav="journal">Journal</a>
+        <a href="vision.html"     class="nav-link" data-nav="vision">Vision</a>
+        <a href="signal.html"     class="nav-link" data-nav="signal">Signal</a>
+        <a href="community.html"  class="nav-link" data-nav="community">Community</a>
+        <a href="index.html#waitlist" class="nav-cta">Join Waitlist</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="page-wrap">
+
+    <!-- ══ COMMUNITY HERO ══ -->
+    <section class="community-hero fade-up">
+      <div class="section-inner" style="text-align:center">
+        <span class="star-float" aria-hidden="true">🌟</span>
+        <div class="s-label" style="justify-content:center">Coming Q2 2027</div>
+        <h1 class="s-title" style="font-size:clamp(2.4rem,6vw,4rem)">Star Traders</h1>
+        <p class="s-sub" style="margin:0 auto">
+          Where serious traders come to<br>
+          <strong style="color:var(--white)">sharpen their edge.</strong>
+        </p>
+        <div class="launch-badge" style="margin:20px auto 0;display:inline-flex">
+          <span aria-hidden="true">🚀</span> Launching Q2 2027
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ FOUNDING MEMBER COUNTER ══ -->
+    <section class="counter-section fade-up">
+      <div class="section-inner" style="text-align:center">
+        <div class="counter-box glass-card gold-card" style="display:inline-flex;flex-direction:column;align-items:center;gap:12px">
+          <div class="counter-number" id="founder-count" aria-live="polite" aria-label="Founding member count">0</div>
+          <p class="counter-label">
+            traders already on the<br>
+            <strong style="color:var(--gold)">founding member waitlist</strong>
+          </p>
+          <div style="display:flex;align-items:center;gap:8px;margin-top:4px">
+            <div style="width:8px;height:8px;border-radius:50%;background:var(--green);animation:livePulse 1.4s ease infinite"></div>
+            <span style="font-size:.76rem;color:var(--gray);font-family:var(--f-head);letter-spacing:.04em">LIVE COUNT</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ COMMUNITY FEATURES ══ -->
+    <section class="community-features">
+      <div class="section-inner">
+        <div class="s-label" style="justify-content:center">Community Features</div>
+        <h2 class="s-title fade-up" style="text-align:center">Your Trading Community, Supercharged</h2>
+        <p class="s-sub fade-up" style="text-align:center;margin:0 auto 46px">
+          Everything you need to grow as a trader — with AI-powered feedback built into every feature.
+        </p>
+
+        <div class="community-grid">
+
+          <div class="community-card glass-card tilt-card fade-up" style="--delay:.05s">
+            <div class="icon-box" aria-hidden="true">👥</div>
+            <h3 class="card-title">Share &amp; Learn</h3>
+            <p class="card-text">
+              Post your trades, thesis and analysis. Get instant AI feedback from Zoria AI
+              on your strategy and risk management. Learn what works and why.
+            </p>
+          </div>
+
+          <div class="community-card glass-card tilt-card fade-up" style="--delay:.12s">
+            <div class="icon-box" aria-hidden="true">🏆</div>
+            <h3 class="card-title">Leaderboard</h3>
+            <p class="card-text">
+              Compete with traders worldwide. Track your performance. Rise through
+              the ranks from Rookie to Star Trader — based on real results, not talk.
+            </p>
+          </div>
+
+          <div class="community-card glass-card tilt-card fade-up" style="--delay:.19s">
+            <div class="icon-box" aria-hidden="true">🤖</div>
+            <h3 class="card-title">AI Trade Review</h3>
+            <p class="card-text">
+              Every trade you share gets analyzed by Zoria AI. Get institutional-grade
+              feedback on your entries, exits and position sizing — in plain English.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ FOUNDING MEMBER BENEFITS ══ -->
+    <section class="benefits-section">
+      <div class="section-inner">
+        <div class="s-label" style="justify-content:center">Founding Members Only</div>
+        <h2 class="s-title fade-up" style="text-align:center">Why Join Now?</h2>
+        <p class="s-sub fade-up" style="text-align:center;margin:0 auto 10px">
+          Founding members get exclusive benefits — forever.
+        </p>
+
+        <div class="benefits-grid">
+
+          <div class="benefit-card glass-card fade-up" style="--delay:.05s">
+            <div class="benefit-icon" aria-hidden="true">⭐</div>
+            <p class="benefit-text">Founding member badge — forever</p>
+          </div>
+
+          <div class="benefit-card glass-card fade-up" style="--delay:.1s">
+            <div class="benefit-icon" aria-hidden="true">🎁</div>
+            <p class="benefit-text">Free Pro access for 1 year at launch</p>
+          </div>
+
+          <div class="benefit-card glass-card fade-up" style="--delay:.15s">
+            <div class="benefit-icon" aria-hidden="true">🛠️</div>
+            <p class="benefit-text">Direct input on features we build</p>
+          </div>
+
+          <div class="benefit-card glass-card fade-up" style="--delay:.2s">
+            <div class="benefit-icon" aria-hidden="true">🚀</div>
+            <p class="benefit-text">Priority access to everything new</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ FOUNDING CTA ══ -->
+    <section class="founding-cta fade-up">
+      <div class="section-inner">
+        <div class="founding-box glass-card gold-card" style="margin:0 auto;text-align:center">
+          <div class="s-label" style="justify-content:center">Limited Spots</div>
+          <h2 class="s-title" style="text-align:center;font-size:clamp(1.6rem,3.8vw,2.4rem)">
+            Claim Your Founding<br>Member Spot
+          </h2>
+          <p class="s-sub" style="text-align:center;margin:0 auto 24px">
+            Only <strong style="color:var(--gold)">10,000 founding member spots</strong> available.
+          </p>
+
+          <!-- Progress bar -->
+          <div class="progress-wrap">
+            <div class="progress-label">
+              <span>2,847 claimed</span>
+              <span>10,000 total</span>
+            </div>
+            <div class="progress-track" role="progressbar" aria-valuenow="2847" aria-valuemin="0" aria-valuemax="10000" aria-label="Founding member spots claimed">
+              <div class="progress-fill" data-fill="28.47%"></div>
+            </div>
+            <p class="progress-note">7,153 spots remaining — claim yours before they're gone.</p>
+          </div>
+
+          <!-- Form -->
+          <form class="waitlist-form" novalidate style="margin:24px 0 0">
+            <div class="email-row" style="margin:0 auto">
+              <div class="input-wrap">
+                <input type="email" class="email-input"
+                  placeholder="Your email address"
+                  autocomplete="email" required aria-label="Email address" />
+              </div>
+              <button type="submit" class="btn-gold cta-btn" style="border-radius:var(--r-sm);height:52px;white-space:nowrap;padding:0 24px">
+                <span class="btn-text">Claim My Spot →</span>
+              </button>
+            </div>
+            <div class="form-error" role="alert"></div>
+          </form>
+
+          <p class="trust-note" style="justify-content:center;margin-top:16px">
+            <span aria-hidden="true">🔒</span> Free to join. No credit card required.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </div><!-- /page-wrap -->
+
+  <!-- TICKER -->
+  <div class="ticker-wrap" role="marquee" aria-label="Live market data">
+    <div class="ticker-inner" id="ticker-inner"></div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <svg class="footer-star" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26" fill="none" stroke="#F0B429" stroke-width="1.8" stroke-linejoin="round"/>
+        </svg>
+        <span class="footer-name"><span class="footer-z">ZORIA</span> <span class="footer-mk">MARKETS</span></span>
+      </div>
+      <p class="footer-tagline">Market Intelligence. Simplified.</p>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="journal.html">Journal</a>
+        <a href="vision.html">Vision</a>
+        <a href="signal.html">Signal</a>
+        <a href="community.html">Community</a>
+      </nav>
+      <a href="https://x.com/zoriamarkets" class="footer-social" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.835L1.254 2.25H8.08l4.253 5.622L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77z"/></svg>
+        @ZoriaMarkets on X
+      </a>
+      <div class="footer-divider" aria-hidden="true"></div>
+      <p class="footer-copy">© 2026 Zoria Markets. All rights reserved.</p>
+      <p class="footer-powered">Powered by Zoria AI</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

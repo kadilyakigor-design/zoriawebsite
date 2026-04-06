@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="The Zoria Journal — Daily AI-powered market briefings. Written by Zoria AI. Published every morning at 6AM PT." />
+  <meta name="theme-color" content="#0D1117" />
+  <title>The Zoria Journal — Daily Market Intelligence</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="journal">
+
+  <canvas id="starfield"></canvas>
+
+  <!-- NAVIGATION -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Zoria Markets home">
+        <svg class="nav-star" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26" fill="none" stroke="#F0B429" stroke-width="1.8" stroke-linejoin="round"/>
+        </svg>
+        <span class="nav-brand"><span class="nav-z">ZORIA</span><span class="nav-m">MARKETS</span></span>
+      </a>
+      <div class="nav-links" id="nav-links">
+        <a href="journal.html"    class="nav-link" data-nav="journal">Journal</a>
+        <a href="vision.html"     class="nav-link" data-nav="vision">Vision</a>
+        <a href="signal.html"     class="nav-link" data-nav="signal">Signal</a>
+        <a href="community.html"  class="nav-link" data-nav="community">Community</a>
+        <a href="index.html#waitlist" class="nav-cta">Join Waitlist</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="page-wrap">
+
+    <!-- ══ JOURNAL HERO ══ -->
+    <section class="journal-hero fade-up">
+      <div class="section-inner" style="text-align:center">
+        <div class="s-label" style="justify-content:center">Daily Market Briefing</div>
+        <h1 class="s-title" style="font-size:clamp(2.4rem,6vw,4rem)">The Zoria Journal</h1>
+        <p class="s-sub" style="margin:0 auto">
+          Your daily AI-powered market briefing. Written by Zoria AI.<br>
+          Published every morning at <strong style="color:var(--gold)">6AM PT</strong>.
+        </p>
+      </div>
+    </section>
+
+    <!-- ══ FEATURED POST ══ -->
+    <section style="padding:20px 28px 50px">
+      <div class="section-inner">
+
+        <div class="featured-post glass-card gold-card fade-up">
+          <div>
+            <div class="post-meta">
+              <span class="badge badge-gold">🔥 Today's Brief</span>
+              <span class="post-date">April 6, 2026</span>
+            </div>
+            <h2 class="post-title">
+              Markets Brace for Fed Decision While AI Stocks Defy Gravity
+            </h2>
+            <p class="post-preview">
+              Despite broader market uncertainty ahead of Wednesday's Federal Reserve rate announcement,
+              AI-related stocks continued their remarkable run today with <strong style="color:var(--gold)">$NVDA</strong> leading
+              the charge higher. Semiconductor names broadly outperformed while defensive sectors retreated.
+              Here's what you need to know before the open tomorrow...
+            </p>
+            <a href="#" class="btn-gold" style="display:inline-flex;border-radius:50px;padding:12px 24px;font-size:.88rem" onclick="return false" aria-label="Read full brief (coming soon)">
+              Read Full Brief&nbsp; →
+            </a>
+          </div>
+          <div style="flex-shrink:0;display:flex;align-items:flex-start;padding-top:4px">
+            <div style="text-align:right">
+              <div style="font-family:var(--f-head);font-size:3rem;font-weight:800;color:var(--gold);line-height:1;opacity:.18">📰</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══ ARTICLE GRID ══ -->
+    <section style="padding:0 28px 60px">
+      <div class="section-inner">
+        <div class="articles-grid">
+
+          <!-- Card 1 -->
+          <article class="article-card glass-card tilt-card fade-up" style="--delay:.05s">
+            <div class="post-meta" style="margin-bottom:14px">
+              <span class="badge badge-blue">📊 Market Analysis</span>
+            </div>
+            <h3 class="post-title">
+              Bitcoin's Quiet Accumulation Phase and What It Means for Q2
+            </h3>
+            <p class="post-preview">
+              On-chain data suggests institutional wallets have been quietly accumulating BTC
+              while retail sentiment remains cautious. The divergence historically precedes
+              significant moves higher...
+            </p>
+            <div class="post-meta">
+              <span class="post-date">April 5, 2026</span>
+              <span class="post-read">· 3 min read</span>
+              <a href="#" class="read-link" onclick="return false">Read <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="article-card glass-card tilt-card fade-up" style="--delay:.12s">
+            <div class="post-meta" style="margin-bottom:14px">
+              <span class="badge badge-gold">🧠 AI Insight</span>
+            </div>
+            <h3 class="post-title">
+              Why NVIDIA's Moat Is Wider Than Most Analysts Think
+            </h3>
+            <p class="post-preview">
+              The real story isn't the chips. It's the software ecosystem that makes
+              switching costs astronomical for anyone trying to compete with CUDA
+              and the broader developer toolchain...
+            </p>
+            <div class="post-meta">
+              <span class="post-date">April 4, 2026</span>
+              <span class="post-read">· 4 min read</span>
+              <a href="#" class="read-link" onclick="return false">Read <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="article-card glass-card tilt-card fade-up" style="--delay:.19s">
+            <div class="post-meta" style="margin-bottom:14px">
+              <span class="badge badge-green">⚡ Alert</span>
+            </div>
+            <h3 class="post-title">
+              Unusual Options Activity Detected in 3 Major Tech Names
+            </h3>
+            <p class="post-preview">
+              Zoria AI's scanner picked up significant options flow in $AAPL, $MSFT and
+              $META that historically precedes major price moves. The combined notional
+              value exceeded $4.5M in a single session...
+            </p>
+            <div class="post-meta">
+              <span class="post-date">April 3, 2026</span>
+              <span class="post-read">· 2 min read</span>
+              <a href="#" class="read-link" onclick="return false">Read <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ SUBSCRIBE ══ -->
+    <section class="journal-subscribe fade-up">
+      <div class="section-inner">
+        <div class="subscribe-box glass-card gold-card" style="margin:0 auto;max-width:600px">
+          <div class="s-label" style="justify-content:center">Free Forever</div>
+          <h2 class="s-title" style="text-align:center;font-size:clamp(1.7rem,4vw,2.4rem)">
+            Get The Zoria Journal Free
+          </h2>
+          <p class="s-sub" style="text-align:center;margin:0 auto 28px">
+            Join thousands of traders who start their morning with Zoria.
+          </p>
+
+          <form class="waitlist-form" novalidate>
+            <div class="email-row" style="margin:0 auto">
+              <div class="input-wrap">
+                <input type="email" class="email-input"
+                  placeholder="Your email address"
+                  autocomplete="email" required aria-label="Email address" />
+              </div>
+              <button type="submit" class="btn-gold subscribe-btn">
+                <span class="btn-text">Subscribe →</span>
+              </button>
+            </div>
+            <div class="form-error" role="alert"></div>
+          </form>
+
+          <p class="trust-note" style="justify-content:center;margin-top:16px">
+            <span aria-hidden="true">🔒</span> Free forever. Unsubscribe anytime.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </div><!-- /page-wrap -->
+
+  <!-- TICKER -->
+  <div class="ticker-wrap" role="marquee" aria-label="Live market data">
+    <div class="ticker-inner" id="ticker-inner"></div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <svg class="footer-star" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26" fill="none" stroke="#F0B429" stroke-width="1.8" stroke-linejoin="round"/>
+        </svg>
+        <span class="footer-name"><span class="footer-z">ZORIA</span> <span class="footer-mk">MARKETS</span></span>
+      </div>
+      <p class="footer-tagline">Market Intelligence. Simplified.</p>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="journal.html">Journal</a>
+        <a href="vision.html">Vision</a>
+        <a href="signal.html">Signal</a>
+        <a href="community.html">Community</a>
+      </nav>
+      <a href="https://x.com/zoriamarkets" class="footer-social" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.835L1.254 2.25H8.08l4.253 5.622L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77z"/></svg>
+        @ZoriaMarkets on X
+      </a>
+      <div class="footer-divider" aria-hidden="true"></div>
+      <p class="footer-copy">© 2026 Zoria Markets. All rights reserved.</p>
+      <p class="footer-powered">Powered by Zoria AI</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
